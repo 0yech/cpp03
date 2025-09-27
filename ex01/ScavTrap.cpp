@@ -6,15 +6,14 @@
 /*   By: nrey <nrey@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/06/07 06:51:01 by nrey              #+#    #+#             */
-/*   Updated: 2025/06/07 17:57:25 by nrey             ###   ########.fr       */
+/*   Updated: 2025/09/25 02:11:50 by nrey             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-ScavTrap::ScavTrap()
+ScavTrap::ScavTrap() : ClapTrap("Default")
 {
-    _name = "Default";
     _hitPoints = 100;
     _energyPoints = 50;
     _attackDamage = 20;
@@ -23,7 +22,6 @@ ScavTrap::ScavTrap()
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name)
 {
-    _name = name;
     _hitPoints = 100;
     _energyPoints = 50;
     _attackDamage = 20;
